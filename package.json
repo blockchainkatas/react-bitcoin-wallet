@@ -1,0 +1,37 @@
+{
+  "name": "react-bitocin-wallet",
+  "version": "1.0.0",
+  "description": "A Bitcoin sample application using React",
+  "main": "/build/app.js",
+  "scripts": {
+    "production": "webpack -p",
+    "build": "webpack --colors",
+    "serve": "webpack-dev-server --content-base build/ --colors --progress",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "Blockchain Katas (https://github.com/blockchainkatas)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.24.1",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "blockcypher": "^0.2.0",
+    "firebase": "^3.6.1",
+    "moment": "^2.16.0",
+    "normalize-css": "^2.3.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^4.0.0-alpha.4",
+    "uuid": "^2.0.3"
+  }
+}

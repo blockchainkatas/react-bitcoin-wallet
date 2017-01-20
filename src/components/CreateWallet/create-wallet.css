@@ -1,0 +1,27 @@
+.root {
+  margin: 0.5em;
+  text-align: center;
+}
+
+.name {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.75em;
+  margin: 1em 0.5em;
+}
+
+.buttons {
+  justify-content: flex-center;
+}
+
+.buttons > button {
+  border-radius: 5px;
+  padding: 0.5em 0.75em;
+  margin: 0.25em;
+}
+
+.create {
+  background-color: #2d84cc;
+  border: 1px solid #226aa6;
+  color: #fff;
+}

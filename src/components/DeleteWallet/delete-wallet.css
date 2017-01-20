@@ -1,0 +1,19 @@
+.root {
+  margin: 0.5em;
+}
+
+.buttons {
+  justify-content: flex-end;
+}
+
+.buttons > button {
+  border-radius: 5px;
+  padding: 0.5em 0.75em;
+  margin: 0.25em;
+}
+
+.delete {
+  background-color: #2d84cc;
+  border: 1px solid #226aa6;
+  color: #fff;
+}

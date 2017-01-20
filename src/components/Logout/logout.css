@@ -1,0 +1,12 @@
+.root {
+  margin: 0 1em;
+  text-align: center;
+}
+
+.button {
+  border: #666;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  background-color: #255424;
+  color: #eaeaea;
+}
