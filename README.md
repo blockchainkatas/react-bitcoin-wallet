@@ -2,13 +2,13 @@
 
 A Bitcoin wallet sample application using React.
 
-> **WARNING: IT'S ONLY A SAMPLE!. If you use this sample with real bitcoins, you do so at your own risk.**
+> **WARNING: IT'S ONLY A SAMPLE! If you use this sample with real bitcoins, you do so at your own risk.**
 
-The purpose: learning React.
+The purpose: learning React & Blockchain/Bitocin.
 
 We are using [BlockCypher](https://www.blockcypher.com/) API for the backend.
 
-This app was inspired by another [PH]P Bitcoin wallet sample](https://github.com/blockcypher/php-wallet-sample).
+This app was inspired by another [PHP Bitcoin wallet sample](https://github.com/blockcypher/php-wallet-sample).
 
 ## Domain
 
@@ -31,22 +31,26 @@ For the time being we are only using normal wallets, instead of HD Wallets. That
 3. Start the development server with `npm start`
 4. Point your browser to http://localhost:8080
 
-> **WARNING: THere is an issue pending to fix regarding using `strictSSL:true`option in BlockCypher (bcpher.js) API requests.
+> WARNING: There is an issue pending to fix regarding using `strictSSL:true`option in BlockCypher (bcpher.js) API requests.
 
-You will need a BLockCypher token.
+You will need a BlockCypher token.
 
 ## TROUBLESHOOTING
 
-### Error: SSL Error: https://api.blockcypher.com/v1/bcy/test/wallets/test01/addresses?token=XX does not support SSL
+### SSL Error
+
+```
+Error: SSL Error: https://api.blockcypher.com/v1/bcy/test/wallets/test01/addresses?token=XX does not support SSL
+```
 
 To avoid that problem you have to replace `strictSSL:true` by `strictSSL:false` in file `node_modules/blockcypher/lib/bcpher.js`.
 
-> **WARNING: That should be avoid in production environments but this is only a sample for learning purposes. Please DO NOT USE a BlockCypher token
+> WARNING: That should be avoid in production environments but this is only a sample for learning purposes. Please DO NOT USE a BlockCypher token
 > with real bitcoins.
 
 ## KNOWN BUGS ANS ISSUES
 
-* If you create a wallet whose name contains spaces. Addresses will be not listed correctly. More info [here](https://github.com/blockcypher/node-client/issues/14).
+* If you create a wallet whose name contains spaces addresses will be not listed correctly. More info [here](https://github.com/blockcypher/node-client/issues/14).
 
 ## Roadmap
 
@@ -57,7 +61,7 @@ To avoid that problem you have to replace `strictSSL:true` by `strictSSL:false` 
 
 ## TODO
 
-> **PENDING: Create isuue for concrete tasks.
+> PENDING: Create issues for concrete tasks.
 
 * Finish all domain specifications.
 * Testing.
@@ -65,7 +69,7 @@ To avoid that problem you have to replace `strictSSL:true` by `strictSSL:false` 
 * Some actions take a long time to complete: for instance create a new wallet.
 * Add links to BlockCypher API endpoints (like wallets list page h1 title).
 * Catch BlockCypher response 429 (Too Many Requests) and show friendly message.
-* Show BlockCypher response errors (for exmaple when user uses invalid BlockCypher token).
+* Show BlockCypher response errors (for example when user uses invalid BlockCypher token).
 
 ## References
 
