@@ -3,3 +3,4 @@ firebase-debug.log
 node_modules
 build/app.js
 build/index.html
+.idea/
