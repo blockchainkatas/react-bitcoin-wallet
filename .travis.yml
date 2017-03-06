@@ -1,0 +1,11 @@
+language: node_js
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: firebase
+  token:
+    secure: "${FIREBASE_API_TOKEN}"
+  project: "react-bitcoin-wallet"  
