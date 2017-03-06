@@ -1,7 +1,7 @@
 {
-  "name": "react-bitocin-wallet",
+  "name": "blockchainkatas/react-bitcoin-wallet",
   "version": "1.0.0",
-  "description": "A Bitcoin sample application using React",
+  "description": "A Bitcoin sample application using React and BlockCypher rest API",
   "main": "/build/app.js",
   "scripts": {
     "production": "webpack -p",
